@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Slider Preview</title>
+    <style media="screen">
+      .slider-wrapper li{
+        list-style: none;
+        float: left;
+      }
+      .slider-wrapper:after{
+        content: "";
+        display: block;
+        clear: both;
+      }
+    </style>
+    <!-- <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script> -->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="slider.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $("#slider").Gslider();
+        $("#sliderA").Gslider({
+          timer:1000=
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div id="slider">
+      <ul>
+        <li><img src="images/image01.jpg" alt=""></li>
+        <li><img src="images/image02.jpg" alt=""></li>
+        <li><img src="images/image03.jpg" alt=""></li>
+      </ul>
+    </div>
+    <div id="sliderA">
+      <ul>
+        <li><img src="images/image01.jpg" alt=""></li>
+        <li><img src="images/image02.jpg" alt=""></li>
+        <li><img src="images/image03.jpg" alt=""></li>
+      </ul>
+    </div>
+  </body>
+</html>
